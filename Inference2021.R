@@ -1,6 +1,6 @@
-args= commandArgs(trailingOnly=TRUE)
+#args= commandArgs(trailingOnly=TRUE)
 
-set.seed(c(as.numeric(args[2])))
+#set.seed(c(as.numeric(args[2])))
 
 library(MASS)
 library(purrr)
