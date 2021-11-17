@@ -87,8 +87,8 @@ for(o in 1:5){
   }
   
   #inference & bias correction
-  #M = sugm(verbose =FALSE,data= X,method = "clime",lambda=eta*sqrt(log(p[o])/n ))
-M=M.safe
+  M = sugm(verbose =FALSE,data= X,method = "clime",lambda=eta*sqrt(log(p[o])/n ))
+
   Cov1=t(diag(as.vector(sqrt(gamma)),
               nrow=length(gamma)) %*% X) %*% diag(as.vector(sqrt(gamma)),
                                                   nrow=length(gamma)) %*% X
